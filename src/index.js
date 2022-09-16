@@ -7,7 +7,7 @@ import mongo, { ConnectionClosedEvent } from "mongodb";
 import auth from "./auth.js";
 
 const app = express(); // instanciranje aplikacije
-const port =  process.env.PORT; // port na kojem će web server slušati
+const port =  process.env.PORT || 3000; // port na kojem će web server slušati
 
 app.use(cors()); // omogući CORS na svim rutama
 app.use(express.json()); //modul za dekodiranje JSON poruke
