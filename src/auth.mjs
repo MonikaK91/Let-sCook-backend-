@@ -1,5 +1,5 @@
 import mongo from 'mongodb'
-import connect from './db.js'
+import connect from './db.mjs'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
