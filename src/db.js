@@ -1,9 +1,9 @@
 import mongo from 'mongodb'
 
-let connection_string = process.env.CONNECTION_STRING;
+let connection_string = 'mongodb+srv://admin:admin@cluster0.dnzl8fu.mongodb.net/?retryWrites=true&w=majority';
 
 //naknadno dodano jer je bacalo grešku da MongoClient nije definiran
-let MongoClient = mongo.MongoClient
+let MongoClient = require('mongodb').MongoClient
 
 //instanciranje mongo client-a
 //to je js objekt koji služi za pristup prema bazi na navedenom connection stringu

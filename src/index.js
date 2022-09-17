@@ -2,12 +2,12 @@ import dotenv from "dotenv";
 dotenv.config();
 import express from "express";
 import cors from "cors";
-import connect from "./db.mjs";
+import connect from "./db.js";
 import mongo, { ConnectionClosedEvent } from "mongodb";
-import auth from "./auth.mjs";
+import auth from "./auth.js";
 
 const app = express(); // instanciranje aplikacije
-const port = process.env.PORT || 3000; // port na kojem će web server slušati
+const port = 3000; // port na kojem će web server slušati
 
 app.use(cors()); // omogući CORS na svim rutama
 app.use(express.json()); //modul za dekodiranje JSON poruke
