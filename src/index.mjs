@@ -2,9 +2,9 @@ import dotenv from "dotenv";
 dotenv.config();
 import express from "express";
 import cors from "cors";
-import connect from "./db.js";
+import connect from "./db.mjs";
 import mongo, { ConnectionClosedEvent } from "mongodb";
-import auth from "./auth.js";
+import auth from "./auth.mjs";
 
 const app = express(); // instanciranje aplikacije
 const port = process.env.PORT || 3000; // port na kojem će web server slušati
