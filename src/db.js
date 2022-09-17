@@ -1,6 +1,6 @@
 import mongo from 'mongodb'
 
-let connection_string =  process.env.CONNECTION_STRING;
+let connection_string = process.env.CONNECTION_STRING;
 
 //naknadno dodano jer je bacalo grešku da MongoClient nije definiran
 let MongoClient = require('mongodb').MongoClient
